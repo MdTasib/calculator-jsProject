@@ -4,4 +4,68 @@ body {
     padding: 0;
 }
 
-.calculator
+#calculator {
+    width: 320px;
+    height: 550px;
+    background: ghostwhite;
+    box-shadow: 1px -1px 20px 5px #2eb2aa;
+    border-radius: 20px;
+    margin: 30px auto;
+}
+#result {
+    height: 120px;
+    text-align: right;
+}
+#history {
+    height: 20px;
+    padding-top: 20px;
+    margin: 0 20px;
+    color: #919191;
+}
+#output {
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+
+#keyboard {
+    height: 400px;
+}
+.operator, .number, .empty {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 15px;
+    border-radius: 50px;
+    border-width: 0;
+    outline: 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+.operator, .number {
+    cursor: pointer;
+}
+.operator:active, .number:active, .empty:active {
+    font-size: 24px;
+}
+.number, .empty {
+    background: ghostwhite;
+}
+.number:hover {
+    background: #efefef;
+}
+button:nth-child(4) {
+    background: #2eb2aa;
+}
+button:nth-child(8) {
+    background: #ffa500;
+}
+button:nth-child(12) {
+    background: #fe8080;
+}
+button:nth-child(16) {
+    background: #7d93e0;
+}
+button:nth-child(20) {
+    background: #9477af;
+}
